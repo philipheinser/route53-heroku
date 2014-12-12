@@ -1,5 +1,7 @@
 # heroku - route 53
 
+Point your naked domain *example.com*, hostet on Route53, to your *example.herokuapp.com* Heroku App.
+
 ### Options:
 ```
 {
