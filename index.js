@@ -85,8 +85,14 @@ function setDNS() {
   });
 }
 
-// Look Heroku IP every secound
-new CronJob('* * * * * *', function(){
-    setDNS()
-}, null, true);
+var start = module.exports.start = function () {
+  // Look Heroku IP every secound
+  new CronJob('* * * * * *', function(){
+      setDNS()
+  }, null, true);
+}
+
+if (!module.parent) {
+  start()
+}
   
