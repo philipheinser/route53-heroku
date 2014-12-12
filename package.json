@@ -10,7 +10,6 @@
   "author": "Philip Heinser <philipheinser@me.com>",
   "dependencies": {
     "aws-sdk": "^2.1.0",
-    "cashbox": "^1.0.0",
     "cron": "^1.0.5",
     "nconf": "^0.7.1",
     "underscore": "^1.7.0"
