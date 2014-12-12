@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index"
   },
-  "repository": "",
+  "repository": "https://github.com/philipheinser/route53-heroku",
   "author": "Philip Heinser <philipheinser@me.com>",
   "dependencies": {
     "aws-sdk": "^2.1.0",
