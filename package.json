@@ -1,17 +1,28 @@
 {
   "name": "route53-heroku",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "A simple service to get route 53 to point to your heroku app.",
   "main": "index.js",
   "scripts": {
     "start": "node index"
   },
-  "repository": "https://github.com/philipheinser/route53-heroku",
+  "repository": {
+    "type": "git",
+    "url": "philipheinser/route53-heroku"
+  },
   "author": "Philip Heinser <philipheinser@me.com>",
+  "keywords": [
+    "aws",
+    "heroku",
+    "route53",
+    "dns"
+  ],
   "dependencies": {
     "aws-sdk": "^2.1.0",
     "cron": "^1.0.5",
     "nconf": "^0.7.1",
     "underscore": "^1.7.0"
-  }
+  },
+  "engines": { "node": "0.10.x" },
+  "license": "MIT"
 }
