@@ -1,5 +1,9 @@
 # heroku - route 53
 
+[![npm status](http://img.shields.io/npm/v/route53-heroku.svg?style=flat)](https://www.npmjs.org/package/route53-heroku)
+[![npm downloads](https://img.shields.io/npm/dm/route53-heroku.svg?style=flat)](https://www.npmjs.org/package/route53-heroku)
+[![dependency status](https://david-dm.org/philipheinser/route53-heroku.svg?style=flat)](https://david-dm.org/philipheinser/route53-heroku)
+
 Point your naked domain *example.com*, hostet on Route53, to your *example.herokuapp.com* Heroku App.
 
 ### Options:
