@@ -3,6 +3,7 @@
 /**
  * Module dependencies.
  */
+var util = require('util');
 var dns = require('dns');
 var events = require('events');
 var _ = require('underscore');
@@ -69,7 +70,7 @@ function Updater(options) {
 
 }
 
-Updater.prototype.__proto__ = events.EventEmitter.prototype;
+util.inherits(Updater, events.EventEmitter);
 
 /**
  * Resolve an IP from Heroku and save it.
@@ -84,7 +85,7 @@ Updater.prototype.lookForHerokuIPs = function() {
     if (err) throw err;
 
     address.forEach(function (val) {
-      self.addresses[val] = new Date;
+      self.addresses[val] = new Date();
     });
 
     var newDNS = [];
@@ -110,7 +111,7 @@ Updater.prototype.lookForHerokuIPs = function() {
 
     self.emit('newDNS', newDNS);
 
-    self.updateRoute53IPs()
+    self.updateRoute53IPs();
 
   });
 };
@@ -184,4 +185,4 @@ if (!module.parent) {
 
   route53heroku.start();
 }
-  
+
