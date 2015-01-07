@@ -4,7 +4,8 @@
   "description": "A simple service to get route 53 to point to your heroku app.",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "test": "vows test/* --spec"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,11 @@
     "cron": "^1.0.5",
     "underscore": "^1.7.0"
   },
-  "engines": { "node": "0.10.x" },
+  "devDependencies": {
+    "vows": "^0.8.1"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
   "license": "MIT"
 }

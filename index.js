@@ -21,6 +21,7 @@ var CronJob = require('cron').CronJob;
  * @api private
  */
 function validateOptions(options) {
+  if (!options) throw new Error('options are required');
   if (!options.aws) throw new Error('options.aws required');
   if (!options.heroku) throw new Error('options.heroku required');
   if (!options.aws.id) throw new Error('options.aws.id required');
@@ -49,10 +50,10 @@ function validateOptions(options) {
  */
 function Updater(options) {
 
+  validateOptions(options);
+
   this.aws = options.aws;
   this.heroku = options.heroku;
-
-  validateOptions(options);
 
   events.EventEmitter.call(this);
 
