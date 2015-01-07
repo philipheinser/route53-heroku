@@ -1,5 +1,6 @@
 # heroku - route 53
 
+[![test status](https://travis-ci.org/philipheinser/route53-heroku.svg)](https://travis-ci.org/philipheinser/route53-heroku)
 [![npm status](http://img.shields.io/npm/v/route53-heroku.svg?style=flat)](https://www.npmjs.org/package/route53-heroku)
 [![node version](https://img.shields.io/node/v/route53-heroku.svg?style=flat)](http://nodejs.org)
 [![npm downloads](https://img.shields.io/npm/dm/route53-heroku.svg?style=flat)](https://www.npmjs.org/package/route53-heroku)
