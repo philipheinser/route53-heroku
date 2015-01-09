@@ -1,6 +1,6 @@
 {
   "name": "route53-heroku",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple service to get route 53 to point to your heroku app.",
   "main": "index.js",
   "scripts": {
