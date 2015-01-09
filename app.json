@@ -1,0 +1,38 @@
+{
+  "name": "Route53 Heroku",
+  "description": "A simple service to get route 53 to point to your heroku app.",
+  "keywords": [
+    "aws",
+    "heroku",
+    "route53",
+    "dns"
+  ],
+  "website": "http://philipheinser.ninja/",
+  "addons": [],
+  "env": {
+    "AWS_ID": {
+      "description": "AWS id.",
+      "value": ""
+    },
+    "AWS_KEY": {
+      "description": "AWS key.",
+      "value": ""
+    },
+    "AWS_REGION": {
+      "description": "AWS region.",
+      "value": "eu-west-1"
+    },
+    "AWS_53_ZONEID": {
+      "description": "Route53 zone id.",
+      "value": ""
+    },
+    "AWS_53_DOMAIN": {
+      "description": "Route53 record name.",
+      "value": "default.com"
+    },
+    "HEROKU_DOMAIN": {
+      "description": "The heroku subdomain.",
+      "value": "default.herokuapp.com"
+    }
+  }
+}

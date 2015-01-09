@@ -167,17 +167,18 @@ Updater.prototype.start = function () {
 };
 
 if (!module.parent) {
-  var nconf = require('nconf');
-
-  //Setup Config
-  nconf
-    .argv()
-    .env()
-    .file({ file: './config.json' });
 
   var route53heroku = new Updater({
-    aws: nconf.get('aws'),
-    heroku: nconf.get('heroku')
+    aws: {
+      id: process.env.AWS_ID,
+      key: process.env.AWS_KEY,
+      region: process.env.AWS_REGION,
+      zoneid: process.env.AWS_53_ZONEID,
+      name: process.env.AWS_53_DOMAIN
+    },
+    heroku: {
+      app: process.env.HEROKU_DOMAIN
+    }
   });
 
   route53heroku.on('newDNS', function (newDNS) {
