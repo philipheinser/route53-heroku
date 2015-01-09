@@ -8,7 +8,9 @@
     "dns"
   ],
   "website": "http://philipheinser.ninja/",
-  "addons": [],
+  "addons": [
+    "papertrail:choklad"
+  ],
   "env": {
     "AWS_ID": {
       "description": "AWS id.",
